@@ -9,6 +9,10 @@ public class TestAgregarCliente {
 		int documento=45188238;
 		GregorianCalendar fechaDeNacimiento= new GregorianCalendar(1998,0,10);
 		ClienteABM abm= new ClienteABM();
-		long ultimoIdCliente = abm.agregar(apellido, nombre, documento,fechaDeNacimiento);
+		try {
+			long ultimoIdCliente = abm.agregar(apellido, nombre, documento,fechaDeNacimiento);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }

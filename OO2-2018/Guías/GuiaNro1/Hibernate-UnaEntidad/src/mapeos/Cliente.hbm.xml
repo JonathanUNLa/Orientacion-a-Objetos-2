@@ -4,13 +4,12 @@
 <hibernate-mapping>
 	<class name="datos.Cliente" table="cliente">
 		<id column="idCliente" name="idCliente">
-			<generator class="identity" />
+			<generator class="identity"/>
 		</id>
-		<property column="apellido" name="apellido" type="string" />
-		<property column="nombre" name="nombre" type="string" />
-		<property column="dni" name="dni" type="int" />
-		<property column="fechaDeNacimiento" name="fechaDeNacimiento"
-			type="calendar" />
-		<property column="baja" name="baja" type="boolean" />
+		<property column="apellido" name="apellido" type="string"/>
+		<property column="nombre" name="nombre" type="string"/>
+		<property column="dni" name="dni" type="int"/>
+		<property column="fechaDeNacimiento" name="fechaDeNacimiento" type="calendar"/>
+		<property column="baja" name="baja" type="boolean"/>
 	</class>
 </hibernate-mapping>
